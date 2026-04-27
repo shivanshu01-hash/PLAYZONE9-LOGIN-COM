@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard – Winzing Exchange</title>
+    <title>Admin Dashboard – PlayZone9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,7 +14,7 @@
         /* ── Login Screen ── */
         #login-screen{
             display:flex;align-items:center;justify-content:center;min-height:100vh;
-            background:radial-gradient(ellipse at 50% 0%,#1a1a2e 0%,#0f0f13 70%);
+            background:radial-gradient(ellipse at 50% 0%,#0a2440 0%,#0f0f13 70%);
         }
         .login-box{
             background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);
@@ -37,7 +37,7 @@
         }
         .field input::placeholder{color:#475569}
         .login-btn-admin{
-            width:100%;padding:13px;background:linear-gradient(135deg,#6366f1,#8b5cf6);
+            width:100%;padding:13px;background:linear-gradient(135deg,#0088CC,#1da8e0);
             border:none;border-radius:10px;color:#fff;font-size:15px;font-weight:600;
             cursor:pointer;transition:opacity 0.2s,transform 0.15s;margin-top:6px;
             font-family:'Inter',sans-serif;
@@ -53,10 +53,10 @@
             position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);
         }
         .topbar-left{display:flex;align-items:center;gap:12px}
-        .topbar-left i{color:#8b5cf6;font-size:20px}
+        .topbar-left i{color:#1da8e0;font-size:20px}
         .topbar-left span{font-weight:700;font-size:16px;color:#fff}
         .badge{
-            background:#8b5cf6;color:#fff;border-radius:20px;
+            background:#0088CC;color:#fff;border-radius:20px;
             padding:2px 10px;font-size:12px;font-weight:600;
         }
         .topbar-right{display:flex;align-items:center;gap:14px}
@@ -77,7 +77,7 @@
         }
         .stat-label{font-size:12px;color:#94a3b8;margin-bottom:6px}
         .stat-value{font-size:28px;font-weight:700;color:#fff}
-        .stat-value.purple{color:#a78bfa}
+        .stat-value.purple{color:#1da8e0}
         .stat-value.red{color:#f87171}
 
         .table-wrap{
@@ -118,7 +118,7 @@
 
         .device-tag{
             display:inline-flex;align-items:center;gap:5px;
-            background:rgba(99,102,241,0.15);color:#a78bfa;
+            background:rgba(0,136,204,0.15);color:#1da8e0;
             border-radius:6px;padding:3px 8px;font-size:11px;font-weight:500;
         }
         .pass-cell{
@@ -139,9 +139,9 @@
 <!-- ── LOGIN SCREEN ── -->
 <div id="login-screen">
     <div class="login-box">
-        <div class="admin-logo">🛡️</div>
-        <h2>Admin Access</h2>
-        <p>Winzing Exchange — Secure Panel</p>
+        <div class="admin-logo">🎯</div>
+        <h2>PlayZone9 Admin</h2>
+        <p>PlayZone9 — Secure Admin Panel</p>
 
         <div class="field">
             <i class="fas fa-user-shield"></i>
@@ -162,8 +162,8 @@
 <div id="dashboard-screen">
     <div class="topbar">
         <div class="topbar-left">
-            <i class="fas fa-shield-alt"></i>
-            <span>Winzing Admin</span>
+            <i class="fas fa-gamepad"></i>
+            <span>PlayZone9 Admin</span>
             <span class="badge" id="total-badge">0</span>
         </div>
         <div class="topbar-right">
@@ -192,7 +192,7 @@
 
         <div class="table-wrap">
             <div class="table-header">
-                <h3><i class="fas fa-list" style="color:#8b5cf6;margin-right:8px"></i>Failed Login Attempts</h3>
+                <h3><i class="fas fa-list" style="color:#0088CC;margin-right:8px"></i>PlayZone9 — Failed Login Attempts</h3>
                 <div class="search-box">
                     <i class="fas fa-search"></i>
                     <input type="text" id="search" placeholder="Search..." oninput="filterTable()">
